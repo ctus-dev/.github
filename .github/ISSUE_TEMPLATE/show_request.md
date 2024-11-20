@@ -3,7 +3,7 @@ name: Show Request
 about: Create a show request for resources
 title: ""
 labels: "show"
-assignees: "@cubs818"
+assignees: "cubs818"
 ---
 
 ## Show Request
