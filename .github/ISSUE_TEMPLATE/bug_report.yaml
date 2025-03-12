@@ -2,7 +2,7 @@ name: Bug Report Form
 description: File a bug report.
 title: "[Bug]: "
 projects: ["ctus-dev/5"]
-types: ["Bug"]
+type: "Bug"
 assignees:
   - octocat
 body:
