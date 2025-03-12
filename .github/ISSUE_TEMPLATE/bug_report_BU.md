@@ -3,7 +3,8 @@ name: Bug report
 about: Create a report to squash a bug
 title: ""
 labels: "bug"
-assignees: "cubs818"
+projects: "CTUS Development"
+type: "Bug"
 ---
 
 **Describe the bug**
