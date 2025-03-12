@@ -1,8 +1,8 @@
-name: Bug Report
+name: Bug Report Form
 description: File a bug report.
 title: "[Bug]: "
-labels: ["bug", "triage"]
-projects: ["octo-org/1", "octo-org/44"]
+projects: ["ctus-dev/5"]
+types: ["Bug"]
 assignees:
   - octocat
 body:
