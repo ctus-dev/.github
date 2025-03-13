@@ -91,7 +91,7 @@ body:
               - Other (Please Explain in the notes)
       validations:
           required: false
-    - type: checkbox
+    - type: checkboxes
       id: input_failover
       attributes:
           label: Input Failover
