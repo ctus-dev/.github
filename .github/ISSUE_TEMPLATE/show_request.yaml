@@ -61,7 +61,7 @@ body:
       attributes:
           label: Destinations
           description: "RTMP destinations will have a pre-populated list to defaults (youtube, vimeo, facebook, etc) but you can add any show specific ones here."
-          placeholder: |
+          value: |
               - id
                 - Youtube_Primary        
               - address
