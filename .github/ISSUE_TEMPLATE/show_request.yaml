@@ -166,8 +166,8 @@ body:
           label: EC2 Instances
           description: "Any additional EC2 instances?"
           placeholder: |
-              - 
-              - Notes
+              - Audio Mixer
+              - Windows Machine with Chrome
     - type: textarea
       id: notes
       attributes:
