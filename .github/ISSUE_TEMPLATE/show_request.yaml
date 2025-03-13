@@ -48,7 +48,7 @@ body:
       attributes:
           label: Feeds by Feed Group
           description: "A Feed represents a send to the cloud, A Feed Group is a collection of feeds. 1 of each req'd"
-          value: |
+          placeholder: |
               - Feed Group 1
                 - Feed 1
                 - Feed 2
@@ -61,7 +61,7 @@ body:
       attributes:
           label: Destinations
           description: "RTMP destinations will have a pre-populated list to defaults (youtube, vimeo, facebook, etc) but you can add any show specific ones here."
-          value: |
+          placeholder: |
               - id
                 - Youtube_Primary        
               - address
@@ -75,12 +75,33 @@ body:
               - ssl   
                 - false
 
-    - type: textarea
+    - type: input
       id: flows
       attributes:
-          label: Flows
+          label: Total Flows
           description: "How many mediaconnect flows? Zixi or Srt? Failover for red/blue deployments?"
-
+    - type: dropdown
+      id: input_type
+      attributes:
+          label: Input Type
+          description: "Select the input type"
+          options:
+              - Zixi
+              - SRT
+              - Other (Please Explain in the notes)
+      validations:
+          required: false
+    - type: checkbox
+      id: input_failover
+      attributes:
+          label: Input Failover
+          description: "Is there a failover for the input?"
+          options:
+              - Redundant
+              - Blue/Green
+              - None
+      validations:
+          required: false
     - type: textarea
       id: input_captions
       attributes:
