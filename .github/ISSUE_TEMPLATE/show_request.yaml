@@ -98,7 +98,7 @@ body:
           description: "Is there a failover for the input?"
           options:
               - Redundant
-              - Blue/Green
+              - Blue-Green
               - None
       validations:
           required: false
