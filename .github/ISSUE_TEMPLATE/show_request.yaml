@@ -1,6 +1,8 @@
 name: Show Request
 description: Create a show request for resources
-title: ""
+title: "Show Request - "
+projects: ["ctus-dev/5"]
+type: "Task"
 labels: ["show"]
 assignees: ["cubs818"]
 body:
@@ -8,8 +10,7 @@ body:
       id: name
       attributes:
           label: Name
-          description: ""
-          placeholder: "Enter your name"
+          placeholder: "Enter The Show Name"
       validations:
           required: true
 
@@ -17,7 +18,7 @@ body:
       id: job_number
       attributes:
           label: Job Number
-          description: ""
+
           placeholder: "Enter the job number"
       validations:
           required: true
@@ -26,7 +27,7 @@ body:
       id: engineer
       attributes:
           label: Engineer
-          description: ""
+
           placeholder: "Enter the engineer's name"
       validations:
           required: true
