@@ -20,7 +20,7 @@ body:
       attributes:
           label: Target Date
           description: Is this fix needed by a specific date or for a specific show?
-          placeholder: YYYY-MM-DD
+          placeholder: A Show or 12-25-2025
     - type: dropdown
       id: severity
       attributes:
