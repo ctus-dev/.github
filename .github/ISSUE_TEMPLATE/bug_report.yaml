@@ -4,7 +4,7 @@ title: "[Bug]: "
 projects: ["ctus-dev/5"]
 type: "Bug"
 assignees:
-    - octocat
+    - cubs818
 body:
     - type: textarea
       id: what-happened
@@ -16,7 +16,7 @@ body:
       validations:
           required: true
     - type: input
-      id: needed by
+      id: needed-by
       attributes:
           label: Target Date
           description: Is this fix needed by a specific date or for a specific show?
