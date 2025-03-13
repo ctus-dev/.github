@@ -83,7 +83,7 @@ body:
     - type: dropdown
       id: input_type
       attributes:
-          label: Input Type
+          label: Flow Input Type
           description: "Select the input type"
           options:
               - Zixi
@@ -94,7 +94,7 @@ body:
     - type: checkboxes
       id: input_failover
       attributes:
-          label: Input Failover
+          label: Flow Input Failover
           description: "Is there a failover for the input? Red/Blue Network Deployment?"
           options:
               - label: Failover
@@ -104,14 +104,14 @@ body:
     - type: textarea
       id: input_captions
       attributes:
-          label: Input Captions
+          label: Channel Input Captions
           description: "Currently only embedded is supported, list any languages that will be included"
           placeholder: "English, Spanish, etc"
 
     - type: checkboxes
       id: output_captions
       attributes:
-          label: Input Failover
+          label: Channel Output Captions
           description: "Output Captions Types"
           options:
               - label: UDP
@@ -134,7 +134,7 @@ body:
           label: Channel Inputs
           description: "What are the inputs for each channel?"
           options:
-              - label: MP4
+              - label: MP4 (Static Loop is included, this adds a loop and dynamic mp4 input)
                 required: false
               - label: Flows
                 required: false
