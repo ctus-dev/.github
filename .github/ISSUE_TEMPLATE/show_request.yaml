@@ -95,13 +95,9 @@ body:
       id: input_failover
       attributes:
           label: Input Failover
-          description: "Is there a failover for the input?"
+          description: "Is there a failover for the input? Red/Blue Network Deployment?"
           options:
-              - label: Redundant
-                required: false
-              - label: Blue-Green
-                required: false
-              - label: None
+              - label: Failover
                 required: false
       validations:
           required: false
@@ -110,21 +106,71 @@ body:
       attributes:
           label: Input Captions
           description: "Currently only embedded is supported, list any languages that will be included"
+          placeholder: "English, Spanish, etc"
 
-    - type: textarea
+    - type: checkboxes
       id: output_captions
       attributes:
-          label: Output Captions
-          description: "Embedded will be available on any udp outputs, make a note if VTT is needed on mediapackage outputs"
+          label: Input Failover
+          description: "Output Captions Types"
+          options:
+              - label: UDP
+                required: false
+              - label: HLS Embedded
+                required: false
+              - label: HLS VTT
+                required: false
+      validations:
+          required: false
 
-    - type: textarea
+    - type: input
       id: channels
       attributes:
-          label: Channels
-          description: "How many channels? Make a note of flow inputs from above"
-
-    - type: textarea
+          label: Total Channels
+          description: "How many channels?"
+    - type: checkboxes
+      id: channel_inputs
+      attributes:
+          label: Channel Inputs
+          description: "What are the inputs for each channel?"
+          options:
+              - label: MP4
+                required: false
+              - label: Flows
+                required: false
+      validations:
+          required: false
+    - type: checkboxes
       id: ec2s
       attributes:
-          label: EC2s
-          description: "List all instances and types needed for show"
+          label: EC2 Instances
+          description: "What instances are needed"
+          options:
+              - label: Relays
+                required: false
+              - label: Multiviewer
+                required: false
+              - label: Discovery Server
+                required: false
+              - label: Comprimato
+                required: false
+              - label: Teams
+                required: false
+              - label: Zoom
+                required: false
+              - label: Vmix
+                required: false
+    - type: textarea
+      id: extra_ec2s
+      attributes:
+          label: EC2 Instances
+          description: "Any additional EC2 instances?"
+          placeholder: |
+              - 
+              - Notes
+    - type: textarea
+      id: notes
+      attributes:
+          label: Notes
+          description: "Any additional notes?"
+          placeholder: "Notes"
