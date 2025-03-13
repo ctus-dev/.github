@@ -1,0 +1,38 @@
+name: Documentation Request Form
+description: Request documentation for a specific topic.
+projects: ["ctus-dev/5"]
+type: "Task"
+labls:
+    - documentation
+    - enhancement
+assignees:
+    - cubs818
+body:
+    - type: textarea
+      id: whats-needed
+      attributes:
+          label: What documentation is needed?
+          description: What documentation is needed?
+          placeholder: Tell us what you need!
+          value: "A documentation for a specific topic."
+      validations:
+          required: true
+
+    - type: textarea
+      id: why-needed
+      attributes:
+          label: Why is this documentation needed?
+          description: Why is this documentation needed?
+          placeholder: Tell us why you need this documentation!
+          value: "This documentation is needed because..."
+      validations:
+          required: false
+
+    - type: textarea
+      id: additional-info
+      attributes:
+          label: Additional information
+          description: Additional information
+          placeholder: Tell us anything else you want to add!
+      validations:
+          required: false

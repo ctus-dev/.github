@@ -1,0 +1,13 @@
+name: Imporvement Suggestion Form
+description: Suggest an improvement.
+projects: ["ctus-dev/5"]
+type: "Task"
+assignees:
+    - cubs818
+body:
+    - type: textarea
+      attributes:
+          label: Suggestion
+          description: How can we improve the project?.
+      validations:
+          required: true

@@ -1,0 +1,92 @@
+name: Show Request
+description: Create a show request for resources
+title: ""
+labels: ["show"]
+assignees: ["cubs818"]
+body:
+    - type: input
+      id: name
+      attributes:
+          label: Name
+          description: ""
+          placeholder: "Enter your name"
+      validations:
+          required: true
+
+    - type: input
+      id: job_number
+      attributes:
+          label: Job Number
+          description: ""
+          placeholder: "Enter the job number"
+      validations:
+          required: true
+
+    - type: input
+      id: engineer
+      attributes:
+          label: Engineer
+          description: ""
+          placeholder: "Enter the engineer's name"
+      validations:
+          required: true
+
+    - type: dropdown
+      id: region
+      attributes:
+          label: Region
+          description: "Select the region"
+          options:
+              - us-east-1
+              - us-west-2
+      validations:
+          required: true
+
+    - type: textarea
+      id: feeds_by_feed_group
+      attributes:
+          label: Feeds by Feed Group
+          description: "A Feed represents a send to the cloud, A Feed Group is a collection of feeds. 1 of each req'd"
+          value: |
+              - Feed Group 1
+                - Feed 1
+                - Feed 2
+              - Feed Group 2
+                - Feed 3
+                - Feed 4
+
+    - type: textarea
+      id: destinations
+      attributes:
+          label: Destinations
+          description: "RTMP destinations will have a pre-populated list to defaults (youtube, vimeo, facebook, etc) but you can add any show specific ones here."
+
+    - type: textarea
+      id: flows
+      attributes:
+          label: Flows
+          description: "How many mediaconnect flows? Zixi or Srt? Failover for red/blue deployments?"
+
+    - type: textarea
+      id: input_captions
+      attributes:
+          label: Input Captions
+          description: "Currently only embedded is supported, list any languages that will be included"
+
+    - type: textarea
+      id: output_captions
+      attributes:
+          label: Output Captions
+          description: "Embedded will be available on any udp outputs, make a note if VTT is needed on mediapackage outputs"
+
+    - type: textarea
+      id: channels
+      attributes:
+          label: Channels
+          description: "How many channels? Make a note of flow inputs from above"
+
+    - type: textarea
+      id: ec2s
+      attributes:
+          label: EC2s
+          description: "List all instances and types needed for show"

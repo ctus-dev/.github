@@ -1,0 +1,24 @@
+name: Feature Request Form
+description: Request a new feature.
+projects: ["ctus-dev/5"]
+type: "Enhancement"
+assignees:
+    - cubs818
+labels:
+    - feature-request
+    - enhancement
+body:
+    - type: textarea
+      id: feature-request
+      attributes:
+          label: Feature Request
+      validations:
+          required: true
+    - type: textarea
+      id: additional-info
+      attributes:
+          label: Additional information
+          description: Additional information
+          placeholder: Tell us anything else you want to add!
+      validations:
+          required: false
