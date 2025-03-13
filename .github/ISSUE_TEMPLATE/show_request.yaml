@@ -97,9 +97,12 @@ body:
           label: Input Failover
           description: "Is there a failover for the input?"
           options:
-              - Redundant
-              - Blue-Green
-              - None
+              - label: Redundant
+                required: false
+              - label: Blue-Green
+                required: false
+              - label: None
+                required: false
       validations:
           required: false
     - type: textarea
