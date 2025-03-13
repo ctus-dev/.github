@@ -61,6 +61,19 @@ body:
       attributes:
           label: Destinations
           description: "RTMP destinations will have a pre-populated list to defaults (youtube, vimeo, facebook, etc) but you can add any show specific ones here."
+          placeholder: |
+              - id
+                - Youtube_Primary        
+              - address
+                - rtmp://a.rtmp.youtube.com                        
+              - port 
+                - 1935                
+              - app   
+                - live2         
+              - type 
+                - RTMP
+              - ssl   
+                - false
 
     - type: textarea
       id: flows
