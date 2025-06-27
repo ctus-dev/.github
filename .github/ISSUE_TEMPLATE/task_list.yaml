@@ -3,8 +3,7 @@ description: Generate a task list for the project
 title: "Task List - "
 projects: ["ctus-dev/5"]
 type: "Task"
-assignees:
-    - cubs818
+
 body:
     - type: textarea
       id: description
