@@ -2,7 +2,7 @@ name: Documentation Request Form
 description: Request documentation for a specific topic.
 projects: ["ctus-dev/5"]
 type: "Task"
-labls:
+labels:
     - documentation
     - enhancement
 assignees:
